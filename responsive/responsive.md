@@ -5,10 +5,7 @@
 > * 순차적인 순서가 아닌 디바이스(모바일, 테블릿, 웹)에서 각자 다른 위치 또는 순서를 나타낼 때  
 > * 각 디바이스별 구조가 달라질때
 
-![이미지](/img/history-m-01.jpg) 
-![이미지](/img/history-m-02.jpg)  
-![이미지](/img/history-t-01.jpg)  
-![이미지](/img/history-w-01.jpg)  
+![이미지](/img/layout.jpg)  
 
 ## 2. Break Point(분기점, 중단점)
 > 최소 사이즈를 기준으로 디바이스(web, tablet, mobile)에 따라 분기점이 필요합니다.  
@@ -25,7 +22,6 @@
 [출처](http://brand-maestro.com/place-powerful-breakpoints-responsive-web-design/)
 
 <pre>
-CSS 문법
 <code>
  /* Mobile */
 
@@ -84,7 +80,7 @@ CSS 문법
 * 하나의 css로 반응형을 제작하는방법
     * 모듈화 시켜 반응형 만들기
     <pre>
-    
+
     </pre>
 
 * 기준을 정하고 해당 레이아웃이 변경되는 css만 불러오는 방법
