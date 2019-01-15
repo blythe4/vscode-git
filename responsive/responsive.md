@@ -18,6 +18,12 @@
 3. Web : 1280px
 </pre>
 
+![이미지](/img/responsive-breakpoint01.png)  
+![이미지](/img/responsive-breakpoint02.png)  
+[출처](https://uxplanet.org/responsive-design-best-practices-c6d3f5fd163b)  
+![이미지](/img/responsive-breakpoint03.jpg)  
+[출처](http://brand-maestro.com/place-powerful-breakpoints-responsive-web-design/)
+
 <pre>
 CSS 문법
 <code>
@@ -39,19 +45,13 @@ CSS 문법
 </code>
 </pre>
 
-![이미지](/img/responsive-breakpoint01.png)  
-![이미지](/img/responsive-breakpoint02.png)  
-[출처](https://uxplanet.org/responsive-design-best-practices-c6d3f5fd163b)  
-![이미지](/img/responsive-breakpoint03.jpg)  
-[출처](http://brand-maestro.com/place-powerful-breakpoints-responsive-web-design/)
-
-## 3. 모바일 기준 기획, 디자인
-> 모바일부터 기준을 잡고 진행해야 할까 ?  
-> 가장 작은 뷰에서부터 시작하자.  
-> 필수 요소와 보조 요소를 분리하는데 도움이 되고, 내용을 우선으로 
+## 3. 모바일 기준 기획, 디자인  
+> * 가장 작은 뷰에서부터 시작하자.  
+> * 필수 요소와 보조 요소를 분리하는데 도움이 된다.
 
 ![이미지](/img/design-mobile-first.png)  
 [출처](https://uxplanet.org/responsive-design-best-practices-c6d3f5fd163b)  
+
 
 
 ## 4. 이미지 요소  
@@ -60,16 +60,15 @@ CSS 문법
 > * 이미지 표시
 >   * 비율 따른 이미지 축소 및 확대
 >   * 이미지가 디바이스별로 다를때
->   * 높이 고정인가?
 > * 웹사이트 최적화를 위해서 각 디바이스별로 이미지를 따로 불러올것인지, 기준이되는 것을 정하는 것이 좋겠다.  
 
 [SVG Sprite 방법](https://a11y.gitbook.io/graphics-aria/svg-graphics/sprites)
 
 ## 5. 텍스트 및 폰트  
-> * 반응형이지만 모바일에서 시스템 폰트 사용 / 웹에서 웹폰트 사용  
+> * 모바일에서 시스템 폰트 사용 / 웹에서 웹폰트 사용  
 > * 모바일 디바이스 넓이에 따라 폰트 크기는 고정 ?  
-> * 텍스트의 줄바꿈 이슈  
 
+> * 텍스트의 줄바꿈 이슈  
 * Web (왼쪽 - 줄바꿈 안함, 오른쪽 - 줄바꿈 적용)  
 ![이미지](/img/text.jpg) 
 * Tablet (상단 - 줄바꿈 안함, 하단 - 줄바꿈 적용)    
@@ -80,9 +79,13 @@ CSS 문법
 > 노트북, 가로모드 처럼 16:9가 아닌 4:3 비율인 모니터나 디바이스들에서 한 화면에 보여지는 내용의 양이 많을 경우 내용이 짤리거나 생각되야 할 때가 생기는데 이때 해결 방법은 ? 모바일에서 내용이 보여지는 방식과 테블릿, pc에서 보여지는 내용이 달라져 보일 수 도 있다.
 
 ---
+
 ### 1. 사이트 접속 시 해당 디바이스 또는 화면의 넓이에 맞춰 css 다르게?  
 * 하나의 css로 반응형을 제작하는방법
     * 모듈화 시켜 반응형 만들기
+    <pre>
+    
+    </pre>
 
 * 기준을 정하고 해당 레이아웃이 변경되는 css만 불러오는 방법
     <pre>
