@@ -79,7 +79,22 @@
 * 하나의 css로 반응형을 제작
     * 모듈화 시켜 반응형 만들기
     <pre>
-
+    <code>
+    /* common */
+    .page-title{padding-top:100px;font-size:2.8rem;font-weight:600;color:#ca183a;letter-spacing:0.2em;text-align:center;}
+    /* Mobile */
+    @media screen and (max-width:959px){
+        .page-title{padding-bottom:30px;}
+    }
+    /* Tablet */
+    @media screen and (min-width:960px){
+        .page-title{font-size:4.2rem;padding-top:200px;padding-bottom:100px;}
+    }
+    /* web */
+    @media screen and (min-width:1280px){
+        .page-title{padding-top:250px;padding-bottom:150px;}
+    }
+    </code>
     </pre>
 
 * 기준(화면 넓이, 접속 디바이스 등..)을 정하고 해당 레이아웃이 변경되는 css만 불러오는 방법
@@ -103,5 +118,5 @@
 > CSS로 Tablet 기준으로 텍스트 줄바꿈 적용
 > * Web (왼쪽 - 줄바꿈 안함, 오른쪽 - 줄바꿈 적용)  
 > ![이미지](/img/text.jpg) 
-> * Tablet (상단 - 줄바꿈 안함, 하단 - 줄바꿈 적용)    
+> * Tablet (왼쪽 - 줄바꿈 안함, 왼쪽 - 줄바꿈 적용)    
 > ![이미지](/img/text-nowrap.jpg)  
