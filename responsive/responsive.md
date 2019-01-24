@@ -35,16 +35,25 @@
 </code>
 </pre>
 
+### 분기점 구분
+> 1. 햄버거 메뉴 표시
+    <pre>
+    - 분기점을 기준으로 헤더 메뉴를 구분(media query)
+    - 사이트 접속 디바이스로 구분(PC, Laptop 접속시 Web 헤더 표시)
+    </pre>
+
+
 ## 2. 모바일 기준 기획, 디자인  
 > * 가장 작은 뷰에서부터 시작하자.  
 > * 필수 요소와 보조 요소를 분리하는데 도움이 된다.
+> * 모바일 구성에서 요소들을 추가하여 레이아웃을 생각한다.
 
 ![이미지](/img/design-mobile-first.png)  
 [이미지 출처](https://uxplanet.org/responsive-design-best-practices-c6d3f5fd163b)  
 
 ## 3. 레이아웃  
-> * 순차적인 순서가 아닌 디바이스(모바일, 테블릿, 웹)에서 각자 다른 위치를 나타낼 때  
-> * 각 디바이스별 구조가 달라질때  
+> 1. 순차적인 순서가 아닌 디바이스(모바일, 테블릿, 웹)에서 각자 다른 위치를 나타낼 때  
+> 2. 각 디바이스별 구조가 달라질때  
 > ![이미지](/img/layout.jpg)  
 
 ## 4. 이미지 요소  
@@ -71,11 +80,33 @@
     3. Mobile : 20px
     </pre>
 
+## 6. 표 
+> * 모바일 디바이스에서 대응 방법  
+> * [테이블 새로 만들기](http://gergeo.se/RWD-Table-Patterns/)  
+> * [리스트 형태](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)  
+    <pre>
+    - 스크롤
+    - column이나 row를 기준으로 테이블 새로 만들기
+    - 테이블이 아닌 리스트 형태의 디자인
+    </pre>
+    1. [Scroll - Table]  
+    ![이미지](/img/table-scroll.png)    
+    2-1. [Web - Table]  
+    ![이미지](/img/table-web.png)    
+    2-2. [Mobile - Table]  
+    ![이미지](/img/table-mobile.png)  
+    3-1. [Web - Table]  
+    ![이미지](/img/table-list-web.png)    
+    3-2. [Mobile - Table]  
+    ![이미지](/img/table-list-mobile.png)  
+
 --------------------------
 
 # 퍼블리싱
 
-## 1. 하나의 css, 디바이스에 맞는 css 분리?
+## Header
+
+## 1. media query 사용한 css, 디바이스에 맞는 css
 * 하나의 css로 반응형을 제작
     * 모듈화 시켜 반응형 만들기
     <pre>
