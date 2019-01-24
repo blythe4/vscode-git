@@ -130,6 +130,7 @@
 * 하나의 css로 반응형을 제작
     * 모듈화 시켜 반응형 만들기
     <pre>
+    [HTML]
     <code>
     &lt;main class="l-wrap"&gt;
         &lt;!-- Header [s] --&gt;
@@ -144,7 +145,7 @@
             &lt;p class="page-text"&gt;Page Text&lt;/p&gt;
         &lt;/section&gt;
         &lt;!-- Container [s] --&gt;
-        
+
         &lt;!-- Footer [s] --&gt;
         &lt;footer class="l-footer"&gt;
         &lt;/footer&gt;    
@@ -153,6 +154,7 @@
     </code>
     </pre>
     <pre>
+    [CSS]
     <code>
     /* layout */
     .l-wrap{...}
