@@ -145,7 +145,7 @@
             &lt;p class="page-text"&gt;Page Text&lt;/p&gt;
         &lt;/section&gt;
         &lt;!-- Container [s] --&gt;
-
+        
         &lt;!-- Footer [s] --&gt;
         &lt;footer class="l-footer"&gt;
         &lt;/footer&gt;    
