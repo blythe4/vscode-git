@@ -1,5 +1,5 @@
 # 반응형 제작 시 유의사항  
-> 우리들에게 필요한 반응형 웹 제작 시 유의사항은 무엇이 있을까? 다음 리스트에서 함께 확인해보자.  
+
 
 ## 1. Break Point(분기점, 중단점)
 > 최소 사이즈를 기준으로 디바이스(web, tablet, mobile)에 따라 분기점을 정한다.  
@@ -57,7 +57,7 @@
 
 ## 3. 레이아웃  
 > 1. 순차적인 순서가 아닌 디바이스(모바일, 테블릿, 웹)에서 각자 다른 위치를 나타낼 때  
-> 2. 각 디바이스별 구조가 달라질때 [LG화학 디지털아카이브 - 해외사업 히스토리](http://developers.xeogen.com/blythe/lgarchive/overseas.html)  
+> : 각 디바이스별 구조가 달라질때 [LG화학 디지털아카이브 - 해외사업 히스토리](http://developers.xeogen.com/blythe/lgarchive/overseas.html)  
 > ![이미지](/img/layout.jpg)  
 
 ## 4. 이미지 요소  
@@ -129,6 +129,29 @@
 ## 1. media query 사용한 css, 디바이스에 맞는 css
 * 하나의 css로 반응형을 제작
     * 모듈화 시켜 반응형 만들기
+    <pre>
+    <code>
+    &lt;main class="l-wrap"&gt;
+        &lt;!-- Header [s] --&gt;
+        &lt;header class="l-header"&gt;
+            &lt;h1&gt;logo&lt;/h1&gt;
+        &lt;/header&gt; 
+        &lt;!-- Header [e] --&gt;
+        
+        &lt;!-- Container [s] --&gt;
+        &lt;saction class="l-container"&gt;
+            &lt;strong class="page-title"&gt;Page Title&lt;/strong&gt;
+            &lt;p class="page-text"&gt;Page Text&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;!-- Container [s] --&gt;
+        
+        &lt;!-- Footer [s] --&gt;
+        &lt;footer class="l-footer"&gt;
+        &lt;/footer&gt;    
+        &lt;!-- Footer [e] --&gt;
+    &lt;/main&gt;
+    </code>
+    </pre>
     <pre>
     <code>
     /* layout */
