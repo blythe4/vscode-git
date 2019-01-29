@@ -59,6 +59,6 @@
 > * [테이블 column Select box로 선택해서 보기](http://gergeo.se/RWD-Table-Patterns/)  
 
 -----------
-### [디자이너](/blythe4/vscode-git/blob/master/responsive/Guide-list/esign.md)
-### [퍼블리셔](/blythe4/vscode-git/blob/master/responsive/Guide-list/publishing.md)
-### [관련 플러그인(js, webSite)](/blythe4/vscode-git/blob/master/responsive/Guide-list/plugin.md)
+### [디자이너](../Guide-list/esign.md)
+### [퍼블리셔](../Guide-list/publishing.md)
+### [관련 플러그인(js, webSite)](../Guide-list/plugin.md)
