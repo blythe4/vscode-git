@@ -18,7 +18,7 @@
 ### 1. [IcoMoon - Free](https://icomoon.io/app/#/select)
 > [사용법](https://dkdlfhd.blog.me/220912398067)
 > - Import Icons > 불러온 파일에 오른쪽 끝 버튼을 눌러 Select All 클릭 > Generate font(setting으로 폰트 이름, Prefix 설정)
-> - Zip 압출 풀고 안에 있는 css와 font 사용
+> - Zip 압축을 풀고 안에 있는 css와 font 사용
     <pre>
     사용 예)  
     HTML

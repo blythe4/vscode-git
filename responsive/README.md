@@ -1,6 +1,5 @@
 # 반응형 제작
 
-
 ## 1. Break Point(분기점, 중단점)
 > 최소 사이즈를 기준으로 디바이스(web, tablet, mobile)에 따라 분기점을 정한다.  
 <pre>
@@ -55,5 +54,44 @@
 
 ## 6. 표 
 > * 모바일 디바이스에서 대응 방법  
-> * [모바일에서 리스트 형태로 보기](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)  
+> * [모바일에서 리스트 형태로 보기](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)
 > * [테이블 column Select box로 선택해서 보기](http://gergeo.se/RWD-Table-Patterns/)  
+> * 테이블 고정(상단고정, 좌측고정)
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="blythe4" data-slug-hash="qgaBVG" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Fixed table header">
+  <span>See the Pen <a href="https://codepen.io/blythe4/pen/qgaBVG/">
+  Fixed table header</a> by blythe (<a href="https://codepen.io/blythe4">@blythe4</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="blythe4" data-slug-hash="OdRJvb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Horizontal scrolling table with Fixed first column">
+  <span>See the Pen <a href="https://codepen.io/blythe4/pen/OdRJvb/">
+  Horizontal scrolling table with Fixed first column</a> by blythe (<a href="https://codepen.io/blythe4">@blythe4</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+## 7. 폴더 및 파일명
+> * 폴더명 정의
+
+1. Break Point를 기준으로 폴더명 생성
+    <pre>
+    Web
+    - 00.main.psd
+    - ...
+    Tablet
+    - 00.main.psd
+    - ...
+    Mobile
+    - 00.main.psd
+    - ...
+    </pre>
+2. 하나의 폴더 안에 파일명으로 구분 
+    <pre>
+    PSD
+    - 00.main_W.psd 또는 00.main_1280.psd
+    - 00.main_T.psd 또는 00.main_712.psd
+    - 00.main_M.psd 또는 00.main_320.psd
+    </pre>
+
