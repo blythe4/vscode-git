@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* layout */
+    .l-wrap{}
+    .l-header{}
+    .l-footer{}  
+    /* Mobile */
+    @media screen and (max-width:711px){
+        .l-header{}
+        .l-footer{}
+    }
+    /* Tablet */
+    @media screen and (min-width:712px){
+        .l-wrap{}
+        .l-header{}
+        .l-footer{}
+    }
+    /* web */
+    @media screen and (min-width:1280px){
+        .l-wrap{}
+        .l-header{}
+    }  
+
+
+    /* common */
+    .page-title{}
+    .page-text{}    
+    /* Mobile */
+    @media screen and (max-width:711px){
+        .page-title{}
+        .page-text{}
+    }
+    /* Tablet */
+    @media screen and (min-width:712px){
+        .page-title{}
+        .page-text{}
+    }
+    /* web */
+    @media screen and (min-width:1280px){
+        .page-title{}
+        .page-text{}
+    }   
+    
+    </style>
+</head>
+<body>
+    <main class="l-wrap">
+        <!-- Header [s] -->
+        <header class="l-header">
+            <h1>logo</h1>
+        </header> 
+        <!-- Header [e] -->
+        
+        <!-- Container [s] -->
+        <saction class="l-container">
+            <strong class="page-title">Page Title</strong>
+            <p class="page-text">Page Text</p>
+        </section>
+        <!-- Container [s] -->
+        
+        <!-- Footer [s] -->
+        <footer class="l-footer">
+        </footer>    
+        <!-- Footer [e] -->
+    </main>
+</body>
+</html>

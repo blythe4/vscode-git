@@ -11,7 +11,6 @@
     &lt;link rel="stylesheet" type="text/css" href="/mobile.css" media="screen and (max-width:711px)" /&gt;
 </pre>
 
-
 ## Break Point(분기점, 중단점)
 * 최소 사이즈를 기준으로 디바이스(web, tablet, mobile)에 따라 분기점을 정한다.  
 <pre>
@@ -29,7 +28,6 @@
 2. 이미지
 3. 폰트 크기
 4. 레이아웃 고정 넓이(LNB, aside)
-
 
 ## media query 사용한 css, 디바이스에 맞는 css
 * 하나의 css로 반응형을 제작
@@ -58,8 +56,9 @@
     &lt;/main&gt;
     </code>
     </pre>
+    
     <pre>
-    [CSS]
+    [CSS] - 모바일 우선 작업 시
     <code>
     /* layout */
     .l-wrap{...}
@@ -98,8 +97,51 @@
     @media screen and (min-width:1280px){
         .page-title{...}
         .page-text{...}
+    }
+    </code>
+    </pre>
+
+    <pre>
+    [CSS] - 웹 우선 작업 시
+    <code>
+    /* layout */
+    .l-wrap{...}
+    .l-header{...}
+    .l-footer{...}  
+    /* web */
+    @media screen and (min-width:1280px){
+        .l-wrap{...}
+        .l-header{...}
+    }  
+    /* Tablet */
+    @media screen and (max-width:1279px){
+        .l-wrap{...}
+        .l-header{...}
+        .l-footer{...}
+    }
+    /* Mobile */
+    @media screen and (max-width:711px){
+        .l-header{...}
+        .l-footer{...}
+    }
+    /* common */
+    .page-title{...}
+    .page-text{...}    
+    /* web */
+    @media screen and (min-width:1280px){
+        .page-title{...}
+        .page-text{...}
     }   
-    
+    /* Tablet */
+    @media screen and (max-width:1279px){
+        .page-title{...}
+        .page-text{...}
+    }
+    /* Mobile */
+    @media screen and (max-width:711px){
+        .page-title{...}
+        .page-text{...}
+    }
     </code>
     </pre>
 
@@ -125,7 +167,6 @@
 * Tablet (왼쪽 - 줄바꿈 안함, 왼쪽 - 줄바꿈 적용)    
 ![이미지](/img/text-nowrap.jpg)  
 
-
 ## 표 
 * 모바일 디바이스에서 대응 방법  
 * 테이블 고정([상단고정](https://codepen.io/blythe4/pen/qgaBVG/), [좌측고정](https://codepen.io/blythe4/pen/OdRJvb/))
@@ -146,7 +187,3 @@
     ![이미지](/img/table-list-web.png)    
     3-2. [Mobile - Table]  
     ![이미지](/img/table-list-mobile.png)  
-
-## 원페이지 반응형
-* 노트북, 디바이스 가로모드 처럼 16:9가 아닌 4:3 비율인 화면에서 보여지는 내용의 양(높이)이 많을 경우 내용이 화면에서 다 안보이고 화면 밖으로 넘어가 스크롤이 생기거나 이미지나 내용이 짤려질때(비율에 맞춰 작게 보이거나 여백이 많아져 보일 수도 있다.)
-* 모바일에서 내용이 보여지는 방식과 테블릿, PC에서 보여지는 내용이 달라져 보일 수 도 있다.
