@@ -59,6 +59,6 @@
 > * [테이블 column Select box로 선택해서 보기](http://gergeo.se/RWD-Table-Patterns/)  
 
 -----------
-### [디자이너](./guide-list/design.md)
-### [퍼블리셔](./guide-list/publishing.md)
-### [관련 플러그인(js, webSite)](./guide-list/plugin.md)
+### [디자이너](/guide-list/design.md)
+### [퍼블리셔](/guide-list/publishing.md)
+### [관련 플러그인(js, webSite)](/guide-list/plugin.md)
