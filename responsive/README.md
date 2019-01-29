@@ -57,8 +57,3 @@
 > * 모바일 디바이스에서 대응 방법  
 > * [모바일에서 리스트 형태로 보기](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)  
 > * [테이블 column Select box로 선택해서 보기](http://gergeo.se/RWD-Table-Patterns/)  
-
------------
-### [디자이너](../Guide-list/esign.md)
-### [퍼블리셔](../Guide-list/publishing.md)
-### [관련 플러그인(js, webSite)](../Guide-list/plugin.md)
