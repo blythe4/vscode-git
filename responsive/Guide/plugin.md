@@ -12,7 +12,7 @@
 
 ## SVG 아이콘 폰트
 * SVG 아이콘을 폰트처럼 사용  
-* 폰트로 사용하기 때문에 단색만 사용가능 
+* 폰트로 사용하기 때문에 단색만 사용가능  
 
 ### 1. [IcoMoon - Free](https://icomoon.io/app/#/select)
 > [사용법](https://dkdlfhd.blog.me/220912398067)
@@ -21,11 +21,15 @@
     <pre>
     사용 예)  
     [HTML]
-    <code>&lt;span class="icon-home"&gt;&lt;/span&gt;</code>  
+    ```html
+    <span class="icon-home"></span>
+    ```
     [CSS]
-    <code>.icon-home:before {content: "\e900";}</code>
+    ```css
+    .icon-home:before {content: "\e900";}
+    ```
     </pre>
 
-## 표 
+## 표  
 * [모바일에서 리스트 형태로 보기](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)
 * [테이블 column Select box로 선택해서 보기](http://gergeo.se/RWD-Table-Patterns/)  

@@ -1,15 +1,18 @@
 # Publisher
 
 ## Header
-<pre>
-    Meta Tag
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 
-    : 기준(화면 넓이, 접속 디바이스 등..)을 정하고 해당 레이아웃이 변경되는 css만 불러오는 방법
-    &lt;link rel="stylesheet" type="text/css" href="/web.css" media="screen and (min-width:1280px)" /&gt;
-    &lt;link rel="stylesheet" type="text/css" href="/tablet.css" media="screen and (min-width:712px) and (max-width:1279px)" /&gt;
-    &lt;link rel="stylesheet" type="text/css" href="/mobile.css" media="screen and (max-width:711px)" /&gt;
-</pre>
+```html
+[Meta Tag]
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+```html
+기준(화면 넓이, 접속 디바이스 등..)을 정하고 해당 레이아웃이 변경되는 css만 불러오는 방법
+<link rel="stylesheet" type="text/css" href="/web.css" media="screen and (min-width:1280px)" />
+<link rel="stylesheet" type="text/css" href="/tablet.css" media="screen and (min-width:712px) and (max-width:1279px)" />
+<link rel="stylesheet" type="text/css" href="/mobile.css" media="screen and (max-width:711px)" />
+```
 
 ## Break Point(분기점, 중단점)
 * 최소 사이즈를 기준으로 디바이스(web, tablet, mobile)에 따라 분기점을 정한다.  
@@ -25,52 +28,51 @@
 : PC, Laptop 접속(Web 표시) / Mobile, Tablet 접속(mobile, Tablet 표시)
 
 1. 햄버거 메뉴 표시
-2. 이미지
-3. 폰트 크기
-4. 레이아웃 고정 넓이(LNB, aside)
+2. 이미지(비율, 높이고정, 밀도에 따른 배수 이미지)
+3. 폰트 크기(디바이스 넓이에 맞춰 유동적인 사이즈, 고정사이즈)
+4. 레이아웃 고정 넓이(Left menu)
+5. 여백 넓이(고정, 넓이 비율)
+6. column, gutter 넓이(비율, 고정)
 
 ## media query 사용한 css, 디바이스에 맞는 css
 * 하나의 css로 반응형을 제작
     * 모듈화 시켜 반응형 만들기
-    <pre>
-    [HTML]
-    <code>
-    &lt;main class="l-wrap"&gt;
-        &lt;!-- Header [s] --&gt;
-        &lt;header class="l-header"&gt;
-            &lt;h1&gt;logo&lt;/h1&gt;
-        &lt;/header&gt; 
-        &lt;!-- Header [e] --&gt;
-        
-        &lt;!-- Container [s] --&gt;
-        &lt;saction class="l-container"&gt;
-            &lt;strong class="page-title"&gt;Page Title&lt;/strong&gt;
-            &lt;p class="page-text"&gt;Page Text&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;!-- Container [s] --&gt;
-        
-        &lt;!-- Footer [s] --&gt;
-        &lt;footer class="l-footer"&gt;
-        &lt;/footer&gt;    
-        &lt;!-- Footer [e] --&gt;
-    &lt;/main&gt;
-    </code>
-    </pre>
-    
-    <pre>
-    [CSS] - 모바일 우선 작업 시
-    <code>
+    [html]
+    ``` html
+     <main class="l-wrap">
+      <!-- Header [s] -->
+      <header class="l-header">
+          <h1>logo</h1>
+      </header>
+      <!-- Header [e] -->
+      
+      <!-- Container [s] -->
+      <section class="l-container">
+          <strong class="page-title">Page Title</strong>
+          <p class="page-text">Page Text</p>
+      </section>
+      <!-- Container [s] -->
+      
+      <!-- Footer [s] -->
+      <footer class="l-footer">
+      </footer>
+      <!-- Footer [e] -->
+  </main>
+  ```
+  [CSS] - 모바일 우선 작업 시
+  ``` css
     /* layout */
     .l-wrap{...}
     .l-header{...}
     .l-footer{...}  
+    
     /* Mobile */
-    @media screen and (max-width:959px){
+    @media screen and (max-width:711px){
         .l-header{...}
         .l-footer{...}
     }
     /* Tablet */
-    @media screen and (min-width:960px){
+    @media screen and (min-width:712px){
         .l-wrap{...}
         .l-header{...}
         .l-footer{...}
@@ -80,16 +82,18 @@
         .l-wrap{...}
         .l-header{...}
     }  
+
     /* common */
     .page-title{...}
-    .page-text{...}    
+    .page-text{...}
+
     /* Mobile */
-    @media screen and (max-width:959px){
+    @media screen and (max-width:711px){
         .page-title{...}
         .page-text{...}
     }
     /* Tablet */
-    @media screen and (min-width:960px){
+    @media screen and (min-width:712px){
         .page-title{...}
         .page-text{...}
     }
@@ -98,12 +102,10 @@
         .page-title{...}
         .page-text{...}
     }
-    </code>
-    </pre>
+  ```
 
-    <pre>
     [CSS] - 웹 우선 작업 시
-    <code>
+    ``` css
     /* layout */
     .l-wrap{...}
     .l-header{...}
@@ -126,7 +128,7 @@
     }
     /* common */
     .page-title{...}
-    .page-text{...}    
+    .page-text{...}
     /* web */
     @media screen and (min-width:1280px){
         .page-title{...}
@@ -142,8 +144,7 @@
         .page-title{...}
         .page-text{...}
     }
-    </code>
-    </pre>
+    ```
 
 ## 폰트  
 1. 모바일 - 시스템 폰트 / 웹 - 웹폰트 사용
@@ -163,8 +164,8 @@
 ## 텍스트
 1. CSS로 Tablet 기준으로 텍스트 줄바꿈 적용
 * Web (왼쪽 - 줄바꿈 안함, 오른쪽 - 줄바꿈 적용)  
-![이미지](/img/text.jpg) 
-* Tablet (왼쪽 - 줄바꿈 안함, 왼쪽 - 줄바꿈 적용)    
+![이미지](/img/text.jpg)  
+* Tablet (왼쪽 - 줄바꿈 안함, 왼쪽 - 줄바꿈 적용)  
 ![이미지](/img/text-nowrap.jpg)  
 
 ## 표 
@@ -178,12 +179,12 @@
     - 테이블이 아닌 리스트 형태의 디자인
     </pre>
     1. [Scroll - Table]  
-    ![이미지](/img/table-scroll.png)    
+    ![이미지](/img/table-scroll.png)  
     2-1. [Web - Table]  
-    ![이미지](/img/table-web.png)    
+    ![이미지](/img/table-web.png)  
     2-2. [Mobile - Table]  
     ![이미지](/img/table-mobile.png)  
     3-1. [Web - Table]  
-    ![이미지](/img/table-list-web.png)    
+    ![이미지](/img/table-list-web.png)  
     3-2. [Mobile - Table]  
     ![이미지](/img/table-list-mobile.png)  

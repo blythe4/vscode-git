@@ -43,9 +43,9 @@
 
 ### 이미지 표시 방법
 * 비율 따른 이미지 축소 및 확대 [LG화학 디지털아카이브 - 기네스북](http://developers.xeogen.com/blythe/lgarchive/guinness.html)
-![이미지](/img/image-01.jpg) 
+![이미지](/img/image-01.jpg)  
 * 이미지가 디바이스별로 다를때 [LG화학 디지털아카이브 - 생명과학](http://developers.xeogen.com/blythe/lgarchive/bioproduct.html)
-![이미지](/img/image-02.jpg) 
+![이미지](/img/image-02.jpg)  
 
 ## 5. 폰트  
 1. 모바일 - 시스템 폰트 / 웹 - 웹폰트 사용
@@ -56,7 +56,7 @@
     3. Mobile : 20px
     </pre>
 3. 분기점 기준으로 디바이스 넓이에 따라 비율(vw 단위)로 사용  
-![이미지](/img/rwd-font.png)   
+![이미지](/img/rwd-font.png)  
     [vw단위 사용](https://www.aristidebenoist.com/)
     <pre>
     1. Web : 32px
@@ -68,17 +68,57 @@
 1. CSS로 Tablet 기준으로 텍스트 줄바꿈 적용
 * Web (왼쪽 - 줄바꿈 안함, 오른쪽 - 줄바꿈 적용)  
 ![이미지](/img/text.jpg) 
-* Tablet (왼쪽 - 줄바꿈 안함, 왼쪽 - 줄바꿈 적용)    
+* Tablet (왼쪽 - 줄바꿈 안함, 왼쪽 - 줄바꿈 적용)  
 ![이미지](/img/text-nowrap.jpg)  
 
-## 7. 원페이지 반응형
+## 7. 리스트
+* 리스트의 순서 및 정렬 방법
+
+[권장]
+<pre>
+01. List  02.List  
+03. List  04.List  
+05. List  06.List  
+</pre>
+
+```html
+<ul>
+    <li>01. List</li>
+    <li>02. List</li>
+    <li>03. List</li>
+    <li>04. List</li>
+    <li>05. List</li>
+    <li>06. List</li>
+</ul>
+```
+
+<pre>
+01. List  04.List  
+02. List  05.List  
+03. List  06.List  
+</pre>
+
+```html
+<ul>
+    <li>01. List</li>
+    <li>02. List</li>
+    <li>03. List</li>
+</ul>
+<ul>
+    <li>04. List</li>
+    <li>05. List</li>
+    <li>06. List</li>
+</ul>
+```
+
+## 8. 원페이지 반응형
 * 노트북, 디바이스 가로모드 처럼 16:9가 아닌 4:3 비율인 화면에서 보여지는 내용의 양(높이)이 많을 경우 내용이 화면에서 다 안보이고 화면 밖으로 넘어가 스크롤이 생기거나 이미지 또는 내용이 겹쳐보이거나 짤려보일 수 있다.(비율에 맞춰 작게 보이거나 여백이 많아져 보일 수도 있다.)  
 
     [화면 넓이 1920x1080]  
-    ![이미지](/img/full-layout-1920.png)   
+    ![이미지](/img/full-layout-1920.png)  
     [화면 넓이 1366x768]  
-    ![이미지](/img/full-layout-1366.png)   
+    ![이미지](/img/full-layout-1366.png)  
 * 모바일에서 보여지는 레이아웃이 테블릿, PC에서 보여지는 레이아웃이 달라질 수 있다.
 
     [모바일]  
-    ![이미지](/img/full-layout-mobile.png)   
+    ![이미지](/img/full-layout-mobile.png)  
