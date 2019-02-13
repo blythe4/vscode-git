@@ -133,7 +133,7 @@
     @media screen and (min-width:1280px){
         .page-title{...}
         .page-text{...}
-    }   
+    }
     /* Tablet */
     @media screen and (max-width:1279px){
         .page-title{...}

@@ -11,14 +11,14 @@
 ![이미지](/img/responsive-breakpoint01.png)  
 [이미지 출처](https://uxplanet.org/responsive-design-best-practices-c6d3f5fd163b)  
 
-## 2. 모바일 기준 기획, 디자인  
+## 2. 모바일 기준 기획, 디자인
 * 가장 작은 뷰에서부터 시작하자.  
 * Mobile 구성에서 요소들을 추가하여 Tablet, Web 레이아웃을 생각한다.
 
 ![이미지](/img/design-mobile-first.png)  
 [이미지 출처](https://uxplanet.org/responsive-design-best-practices-c6d3f5fd163b)  
 
-## 3. 레이아웃  
+## 3. 레이아웃
 1. 순차적인 순서가 아닌 디바이스(모바일, 테블릿, 웹)에서 각자 다른 위치를 나타낼 때  
     - 각 디바이스별 구조가 달라질때 [LG화학 디지털아카이브 - 해외사업 히스토리](http://developers.xeogen.com/blythe/lgarchive/overseas.html)  
     ![이미지](/img/layout.jpg)  
@@ -32,8 +32,7 @@
     1. 유동적인 레이아웃
     2. 고정적인 레이아웃 + 유동적인 레이아웃
 
-
-## 4. 이미지 요소  
+## 4. 이미지 요소
 > 디바이스에따라 화면의 밀도가 2배에서 4배로 점점 높아지고 있다. 사용자가 화면을 봤을때 이미지가 흐려보이거나 깨져 보이지 않으려면 최소 2배 이미지가 필요하다.  
 
 1. 하나의 큰 이미지로 모든 디바이스 사용
@@ -73,6 +72,10 @@
 
 ## 7. 리스트
 * 리스트의 순서 및 정렬 방법
+
+https://codepen.io/blythe4/pen/NoBWgo
+
+<script src="https://gist.github.com/blythe4/981707f1938dca68184f05a46fd21cb1.js"></script>
 
 [권장]
 <pre>
