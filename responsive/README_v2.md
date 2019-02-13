@@ -8,23 +8,30 @@
 3. Web : 1280px
 </pre>
 
-![이미지](/img/responsive-breakpoint01.png)  
-![이미지](/img/responsive-breakpoint02.png)  
-[이미지 출처](https://uxplanet.org/responsive-design-best-practices-c6d3f5fd163b)  
-![이미지](/img/responsive-breakpoint03.jpg)  
-[이미지 출처](http://brand-maestro.com/place-powerful-breakpoints-responsive-web-design/)
+### Break Point 별 표시 내용
+    - 레이아웃 고정 넓이(Left menu)
+    - 여백 넓이(고정, 넓이 비율)
+    - column, gutter 넓이(비율, 고정)
+    - 이미지(비율, 높이고정, 밀도에 따른 배수 이미지)
+    - 폰트 크기(디바이스 넓이에 맞춰 유동적인 사이즈, 고정사이즈)
+    - GNB 메뉴 표시
 
 ## 2. 모바일 기준 기획, 디자인  
 * 가장 작은 뷰에서부터 시작하자.  
 * Mobile 구성에서 요소들을 추가하여 Tablet, Web 레이아웃을 생각한다.
 
-![이미지](/img/design-mobile-first.png)  
-[이미지 출처](https://uxplanet.org/responsive-design-best-practices-c6d3f5fd163b)  
-
 ## 3. 레이아웃  
 1. 순차적인 순서가 아닌 디바이스(모바일, 테블릿, 웹)에서 각자 다른 위치를 나타낼 때  
 : 각 디바이스별 구조가 달라질때
-![이미지](/img/layout.jpg)  
+2. [여백](https://codepen.io/blythe4/pen/MLjwYw/)
+    - 여백과 columns의 넓이 둘다 화면의 넓이에 따라 넓어지고 줄어든다.  
+    - 여백의 넓이는 항상 고정이고, columns이 화면의 넓이의 비율에 따라 넓어지고 줄어든다.  
+
+3. 레이아웃 넓이 고정
+    > Break Point에 따라 각각 레이아웃의 넓이가 고정 또는 유동적으로 변경
+    1. 유동적인 레이아웃
+    2. 고정적인 레이아웃 + 유동적인 레이아웃
+
 
 ## 4. 이미지 요소  
 > 디바이스에따라 화면의 밀도가 2배에서 4배로 점점 증가하고 있다.  
@@ -43,17 +50,7 @@
 ## 5. 폰트  
 1. 모바일 - 시스템 폰트 / 웹 - 웹폰트 사용
 2. 디바이스 넓이에 따라 폰트 크기 고정
-    <pre>
-    1. Web : 32px
-    2. Tablet : 28px
-    3. Mobile : 20px
-    </pre>
 3. 분기점 기준으로 디바이스 넓이에 따라 비율(vw 단위)로 사용
-    <pre>
-    1. Web : 32px
-    2. Tablet : 28px
-    3. Mobile : 5.55vw
-    </pre>
 
 ## 6. 표 
 * 모바일 디바이스에서 대응 방법  

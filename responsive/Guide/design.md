@@ -70,51 +70,7 @@
 * Tablet (왼쪽 - 줄바꿈 안함, 왼쪽 - 줄바꿈 적용)  
 ![이미지](/img/text-nowrap.jpg)  
 
-## 7. 리스트
-* 리스트의 순서 및 정렬 방법
-
-https://codepen.io/blythe4/pen/NoBWgo
-
-<script src="https://gist.github.com/blythe4/981707f1938dca68184f05a46fd21cb1.js"></script>
-
-[권장]
-<pre>
-01. List  02.List  
-03. List  04.List  
-05. List  06.List  
-</pre>
-
-```html
-<ul>
-    <li>01. List</li>
-    <li>02. List</li>
-    <li>03. List</li>
-    <li>04. List</li>
-    <li>05. List</li>
-    <li>06. List</li>
-</ul>
-```
-
-<pre>
-01. List  04.List  
-02. List  05.List  
-03. List  06.List  
-</pre>
-
-```html
-<ul>
-    <li>01. List</li>
-    <li>02. List</li>
-    <li>03. List</li>
-</ul>
-<ul>
-    <li>04. List</li>
-    <li>05. List</li>
-    <li>06. List</li>
-</ul>
-```
-
-## 8. 원페이지 반응형
+## 7. 원페이지 반응형
 * 노트북, 디바이스 가로모드 처럼 16:9가 아닌 4:3 비율인 화면에서 보여지는 내용의 양(높이)이 많을 경우 내용이 화면에서 다 안보이고 화면 밖으로 넘어가 스크롤이 생기거나 이미지 또는 내용이 겹쳐보이거나 짤려보일 수 있다.(비율에 맞춰 작게 보이거나 여백이 많아져 보일 수도 있다.)  
 
     [화면 넓이 1920x1080]  
