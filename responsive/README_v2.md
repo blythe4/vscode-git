@@ -67,7 +67,7 @@
 
 ### 이미지 표시 방법
 1. 비율 따른 이미지 축소 및 확대
-2. 이미지가 디바이스별로 다를때
+2. 디바이스별로 이미지를 다르게 표현
 
 ## 6. 동영상
 > 동영상이 Background에서 자동재생+loop일때 
@@ -103,9 +103,7 @@
  <a href="https://codepen.io/blythe4/pen/NoBWgo" target="_blank">CodePen 예제</a>
 
 <pre>
-01. List  02.List  
-03. List  04.List  
-05. List  06.List  
+01. List  02.List  03. List  04.List  05. List  06.List  
 </pre>
 
 ```html
@@ -113,25 +111,6 @@
     <li>01. List</li>
     <li>02. List</li>
     <li>03. List</li>
-    <li>04. List</li>
-    <li>05. List</li>
-    <li>06. List</li>
-</ul>
-```
-
-<pre>
-01. List  04.List  
-02. List  05.List  
-03. List  06.List  
-</pre>
-
-```html
-<ul>
-    <li>01. List</li>
-    <li>02. List</li>
-    <li>03. List</li>
-</ul>
-<ul>
     <li>04. List</li>
     <li>05. List</li>
     <li>06. List</li>
@@ -154,7 +133,7 @@
 내용내용내용내용내용내용내용
 </pre>
 
-* Table,PC 일때
+* Tablet, PC 일때
 <pre>
 제목 | 내용내용내용내용내용
 제목 | 내용내용내용내용내용내용내용
