@@ -161,13 +161,6 @@
     3. Mobile : 5.55vw
     </pre>
 
-## 텍스트
-1. CSS로 Tablet 기준으로 텍스트 줄바꿈 적용
-* Web (왼쪽 - 줄바꿈 안함, 오른쪽 - 줄바꿈 적용)  
-![이미지](/img/text.jpg)  
-* Tablet (왼쪽 - 줄바꿈 안함, 왼쪽 - 줄바꿈 적용)  
-![이미지](/img/text-nowrap.jpg)  
-
 ## 표 
 * 모바일 디바이스에서 대응 방법  
 * 테이블 고정([상단고정](https://codepen.io/blythe4/pen/qgaBVG/), [좌측고정](https://codepen.io/blythe4/pen/OdRJvb/))

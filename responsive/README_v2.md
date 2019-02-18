@@ -1,13 +1,4 @@
 # 반응형 제작
-
-## 1. Break Point(분기점, 중단점)
-* 최소 사이즈를 기준으로 디바이스(web, tablet, mobile)에 따라 Break Point를 정한다.  
-<pre>
-1. Mobile : 320px
-2. Tablet : 712px
-3. Web : 1280px
-</pre>
-
 ### Break Point 별 표시 내용
     - 레이아웃 고정 넓이(Left menu)
     - 여백 넓이(고정, 넓이 비율)
@@ -16,12 +7,26 @@
     - 동영상(비율, 화면 Full)
     - 폰트 크기(디바이스 넓이에 맞춰 유동적인 사이즈, 고정사이즈)
     - GNB 메뉴 표시
+-----
+## 1. Break Point(분기점, 중단점)
+* 최소 사이즈를 기준으로 디바이스(web, tablet, mobile)에 따라 Break Point를 정한다. 
+> [디바이스별 화면 사이즈 목록](https://material.io/tools/devices/)
+<pre>
+1. Mobile : 320px
+2. Tablet : 712px
+3. Web : 1280px
+</pre>
 
-## 2. 모바일 기준 기획, 디자인  
-* 가장 작은 뷰에서부터 시작하자.  
-* Mobile 구성에서 요소들을 추가하여 Tablet, Web 레이아웃을 생각한다.
+## 2. 시작 기준은 어디부터 ?   
+1. 모바일 (320px)  
+: 모바일부터 레이아웃을 생각하고, Tablet, PC에 부가적인 내용을 추가하자.
+2. PC (1280px)  
+: PC부터 레이아웃을 생각하고, Tablet, Mobile에 부가적인 내용을 삭제하자.
+
+** 프로젝트 시안 제작은 웹으로 하지만, 제작 시 모바일부터 진행 될 수 있도록 모바일부터 디자인을 해주시는건 어떨까요?
 
 ## 3. 폴더 및 파일명
+> 프로젝트 시작 전 기준을 정하고 공동 작업자들과 공유
 1. Break Point를 기준으로 폴더명 생성
     <pre>
     Web
@@ -44,16 +49,16 @@
 
 ## 4. 레이아웃  
 1. 순차적인 순서가 아닌 디바이스(모바일, 테블릿, 웹)에서 각자 다른 위치를 나타낼 때  
-: 각 디바이스별 구조가 달라질때
+: 각 디바이스별 구조가 달라질때 [LG화학 디지털아카이브 - 해외사업 히스토리](http://developers.xeogen.com/blythe/lgarchive/overseas.html)
 2. 여백 
     > <a href="https://codepen.io/blythe4/pen/MLjwYw/" target="_blank">CodePen 예제</a>
     - 여백과 column의 넓이 둘다 유동적으로 화면의 넓이에 따라 변한다.
     - 여백의 넓이는 항상 고정이고, column이 화면의 넓이의 비율에 따라 변한다.
 
 3. 레이아웃 넓이 고정
-    > Break Point에 따라 각각 레이아웃의 넓이가 고정 또는 유동적으로 변경
-    1. 유동적인 레이아웃
-    2. 고정적인 레이아웃 + 유동적인 레이아웃
+    > Break Point에 따라 각각 레이아웃의 넓이가 고정 또는 유동적으로 변경 <a href="https://codepen.io/blythe4/pen/yZGXeo" target="_blank">CodePen 예제</a>
+    1. 유동적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_cv.htm)
+    2. 고정적인 레이아웃 + 유동적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm)  
 
 ## 5. 이미지 요소  
 > 디바이스에따라 화면의 밀도가 2배에서 4배로 점점 증가하고 있다.  
@@ -66,8 +71,9 @@
 4. SVG 사용 : 로고, 아이콘([SVG Sprite 방법](https://a11y.gitbook.io/graphics-aria/svg-graphics/sprites))
 
 ### 이미지 표시 방법
-1. 비율 따른 이미지 축소 및 확대
-2. 디바이스별로 이미지를 다르게 표현
+1. 비율 따른 이미지 축소 및 확대 [LG화학 디지털아카이브 - 기네스북](http://developers.xeogen.com/blythe/lgarchive/guinness.html)
+2. 디바이스별로 이미지를 다르게 표현 [LG화학 디지털아카이브 - 생명과학](http://developers.xeogen.com/blythe/lgarchive/bioproduct.html)
+3. 높이를 고정으로 하고 이미지를 가운데로 정렬 [예제](https://www.w3schools.com/w3css/tryw3css_templates_cafe.htm)
 
 ## 6. 동영상
 > 동영상이 Background에서 자동재생+loop일때 
@@ -83,12 +89,15 @@
     2. Tablet : 28px
     3. Mobile : 20px
     </pre>
-3. 분기점 기준으로 디바이스 넓이에 따라 비율(vw 단위)로 사용
+3. 분기점 기준으로 디바이스 넓이에 따라 비율([vw 단위](https://codepen.io/blythe4/pen/dagVRa))로 사용
     <pre>
     1. Web : 32px
     2. Tablet : 28px
     3. Mobile : 5.55vw
     </pre>
+
+> vw : Viewport Width로 디바이스의 스크린 넓이값을 기준으로 1vw는 viewport 넓이의 1%와 같다.  
+  예) 320px의 넓이일때 1vw는 3.2px이 된다.
 
 ## 8. 표 
 * 모바일 디바이스에서 대응 방법  
@@ -118,8 +127,7 @@
 ```
 
 ## 10. Description List
-> 제목이 포함 된 리스트  
-<a href="https://codepen.io/blythe4/pen/WPgvKX" target="_blank">CodePen 예제</a>
+> 제목이 포함 된 리스트 <a href="https://codepen.io/blythe4/pen/WPgvKX" target="_blank">CodePen 예제</a>
 
 * Mobile 일때
 <pre>
@@ -139,3 +147,15 @@
 제목 | 내용내용내용내용내용내용내용
 제목 | 내용내용내용내용내용내용
 </pre>
+
+## 11. 원페이지 반응형
+* 화면에서 보여지는 내용이 화면보다 많을 경우 내용이 화면에서 다 안보이고 화면 밖으로 넘어가 스크롤이 생기거나 이미지 또는 내용이 겹쳐보이거나 짤려보일 수 있다.(비율에 맞춰 작게 보이거나 여백이 많아져 보일 수도 있다.)
+* 해상도 높이는 사용자마다 브라우저의 환경설정이 다르기 때문에 화면에 넘치거나, 여백이 많이 생길 수 도 있다.
+
+### 해상도
+1. HD : 1280x720  
+2. FullHD : 1920x1080  
+3. QHD : 2560x1440  
+
+[사이트 예제 - 한국산업단지공단](https://card.kicox.or.kr/main/main.do)  
+[LG화학 디지털아카이브 - 생명과학](http://developers.xeogen.com/blythe/lgarchive/bioproduct.html)
