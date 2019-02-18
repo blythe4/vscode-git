@@ -6,11 +6,12 @@
     - 이미지(비율, 높이고정, 밀도에 따른 배수 이미지)
     - 동영상(비율, 화면 Full)
     - 폰트 크기(디바이스 넓이에 맞춰 유동적인 사이즈, 고정사이즈)
-    - GNB 메뉴 표시
+    - GNB 메뉴 표시(Hover, Touch에 따라 GNB 표시)
 -----
 ## 1. Break Point(분기점, 중단점)
 * 최소 사이즈를 기준으로 디바이스(web, tablet, mobile)에 따라 Break Point를 정한다. 
-> [디바이스별 화면 사이즈 목록](https://material.io/tools/devices/)
+> [디바이스별 화면 사이즈 목록](https://material.io/tools/devices/){: target="_blank"}
+
 <pre>
 1. Mobile : 320px
 2. Tablet : 712px
@@ -19,11 +20,8 @@
 
 ## 2. 시작 기준은 어디부터 ?   
 1. 모바일 (320px)  
-: 모바일부터 레이아웃을 생각하고, Tablet, PC에 부가적인 내용을 추가하자.
-2. PC (1280px)  
-: PC부터 레이아웃을 생각하고, Tablet, Mobile에 부가적인 내용을 삭제하자.
-
-** 프로젝트 시안 제작은 웹으로 하지만, 제작 시 모바일부터 진행 될 수 있도록 모바일부터 디자인을 해주시는건 어떨까요?
+2. PC (1920px)  
+** 시안단계에서 웹부터 디자인을 하지만, 실제 프로젝트 진행 시 모바일부터 디자인
 
 ## 3. 폴더 및 파일명
 > 프로젝트 시작 전 기준을 정하고 공동 작업자들과 공유
@@ -49,7 +47,7 @@
 
 ## 4. 레이아웃  
 1. 순차적인 순서가 아닌 디바이스(모바일, 테블릿, 웹)에서 각자 다른 위치를 나타낼 때  
-: 각 디바이스별 구조가 달라질때 [LG화학 디지털아카이브 - 해외사업 히스토리](http://developers.xeogen.com/blythe/lgarchive/overseas.html)
+: 각 디바이스별 구조가 달라질때 [LG화학 디지털아카이브 - 해외사업 히스토리](http://developers.xeogen.com/blythe/lgarchive/overseas.html){: target="_blank"}
 2. 여백 
     > <a href="https://codepen.io/blythe4/pen/MLjwYw/" target="_blank">CodePen 예제</a>
     - 여백과 column의 넓이 둘다 유동적으로 화면의 넓이에 따라 변한다.
@@ -57,8 +55,8 @@
 
 3. 레이아웃 넓이 고정
     > Break Point에 따라 각각 레이아웃의 넓이가 고정 또는 유동적으로 변경 <a href="https://codepen.io/blythe4/pen/yZGXeo" target="_blank">CodePen 예제</a>
-    1. 유동적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_cv.htm)
-    2. 고정적인 레이아웃 + 유동적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm)  
+    1. 유동적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_cv.htm){: target="_blank"}
+    2. 고정적인 레이아웃 + 유동적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm){: target="_blank"}
 
 ## 5. 이미지 요소  
 > 디바이스에따라 화면의 밀도가 2배에서 4배로 점점 증가하고 있다.  
@@ -68,17 +66,17 @@
 1. 하나의 큰 이미지로 모든 디바이스 사용  
 2. 디바이스별 이미지 사용
 3. 밀도에 따른 이미지 사용
-4. SVG 사용 : 로고, 아이콘([SVG Sprite 방법](https://a11y.gitbook.io/graphics-aria/svg-graphics/sprites))
+4. SVG 사용 : 로고, 아이콘([SVG Sprite 방법](https://a11y.gitbook.io/graphics-aria/svg-graphics/sprites){: target="_blank"})
 
 ### 이미지 표시 방법
-1. 비율 따른 이미지 축소 및 확대 [LG화학 디지털아카이브 - 기네스북](http://developers.xeogen.com/blythe/lgarchive/guinness.html)
-2. 디바이스별로 이미지를 다르게 표현 [LG화학 디지털아카이브 - 생명과학](http://developers.xeogen.com/blythe/lgarchive/bioproduct.html)
-3. 높이를 고정으로 하고 이미지를 가운데로 정렬 [예제](https://www.w3schools.com/w3css/tryw3css_templates_cafe.htm)
+1. 비율 따른 이미지 축소 및 확대 [LG화학 디지털아카이브 - 기네스북](http://developers.xeogen.com/blythe/lgarchive/guinness.html){: target="_blank"}
+2. 디바이스별로 이미지를 다르게 표현 [LG화학 디지털아카이브 - 생명과학](http://developers.xeogen.com/blythe/lgarchive/bioproduct.html){: target="_blank"}
+3. 높이를 고정으로 하고 이미지를 가운데로 정렬 [예제](https://www.w3schools.com/w3css/tryw3css_templates_cafe.htm){: target="_blank"}
 
 ## 6. 동영상
 > 동영상이 Background에서 자동재생+loop일때 
 1. 화면에 꽉차게 표시  
-: 동영상을 가운데 정렬 [사이트 예제](http://sugentech.com/KOR/)
+: 동영상을 가운데 정렬 [사이트 예제](http://sugentech.com/KOR/){: target="_blank"}
 2. Break Point에 따라서 비율에 맞춰 표시
 
 ## 7. 폰트  
@@ -89,7 +87,7 @@
     2. Tablet : 28px
     3. Mobile : 20px
     </pre>
-3. 분기점 기준으로 디바이스 넓이에 따라 비율([vw 단위](https://codepen.io/blythe4/pen/dagVRa))로 사용
+3. 분기점 기준으로 디바이스 넓이에 따라 비율([vw 단위](https://codepen.io/blythe4/pen/dagVRa){: target="_blank"})로 사용
     <pre>
     1. Web : 32px
     2. Tablet : 28px
@@ -101,9 +99,9 @@
 
 ## 8. 표 
 * 모바일 디바이스에서 대응 방법  
-* [모바일에서 리스트 형태로 보기](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)
-* [테이블 column Select box로 선택해서 보기](http://gergeo.se/RWD-Table-Patterns/)  
-* 테이블 고정([상단고정](https://codepen.io/blythe4/pen/qgaBVG/), [좌측고정](https://codepen.io/blythe4/pen/OdRJvb/))
+* [모바일에서 리스트 형태로 보기](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/){: target="_blank"}
+* [테이블 column Select box로 선택해서 보기](http://gergeo.se/RWD-Table-Patterns/){: target="_blank"}  
+* 테이블 고정([상단고정](https://codepen.io/blythe4/pen/qgaBVG/), [좌측고정](https://codepen.io/blythe4/pen/OdRJvb/){: target="_blank"})
 
 ## 9. 리스트
 * 리스트의 순서 및 정렬
@@ -157,5 +155,5 @@
 2. FullHD : 1920x1080  
 3. QHD : 2560x1440  
 
-[사이트 예제 - 한국산업단지공단](https://card.kicox.or.kr/main/main.do)  
-[LG화학 디지털아카이브 - 생명과학](http://developers.xeogen.com/blythe/lgarchive/bioproduct.html)
+[예제1 - 한국산업단지공단](https://card.kicox.or.kr/main/main.do){: target="_blank"}  
+[예제2 - LG화학 디지털아카이브(생명과학)](http://developers.xeogen.com/blythe/lgarchive/bioproduct.html){: target="_blank"}
