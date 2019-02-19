@@ -2,10 +2,10 @@
 ### Break Point 별 표시 내용
     - 레이아웃 고정 넓이(Left menu)
     - 여백 넓이(고정, 넓이 비율)
-    - column, gutter 넓이(비율, 고정)
+    - column, gutter 넓이(고정, 넓이 비율)
     - 이미지(비율, 높이고정, 밀도에 따른 배수 이미지)
-    - 동영상(비율, 화면 Full)
-    - 폰트 크기(디바이스 넓이에 맞춰 유동적인 사이즈, 고정사이즈)
+    - 동영상(비율, 화면 Full, 정렬)
+    - 폰트 크기(디바이스 넓이에 맞춰 가변적인 사이즈, 고정사이즈)
     - GNB 메뉴 표시(Hover, Touch에 따라 GNB 표시)
 -----
 ## 1. Break Point(분기점, 중단점)
@@ -20,10 +20,12 @@
 ## 2. 모바일 기준 기획, 디자인   
 1. 모바일 (320px)  
 2. PC (1920px)  
+
+** [피드백] Top Area /Contents Area / Footer Area 의 러프한 구성인지 더 자세한 설명 필요.  
 ** 시안단계에서 웹부터 디자인을 하지만, 실제 프로젝트 진행 시 모바일부터 디자인
 
-## 3. 폴더 및 파일명
-> 프로젝트 시작 전 기준을 정하고 공동 작업자들과 공유
+## 3. 폴더구조 및 파일명
+> 프로젝트 진행 후 폴더구조 및 파일명 수정에 대한 미연에 방지를 위해 프로젝트 시작 전 기준을 정하고 공동 작업자들과 공유한다. 
 1. Break Point를 기준으로 폴더명 생성
     <pre>
     Web
@@ -47,15 +49,16 @@
 ## 4. 레이아웃  
 1. 순차적인 순서가 아닌 디바이스(모바일, 테블릿, 웹)에서 각자 다른 위치를 나타낼 때  
 : 각 디바이스별 구조가 달라질때 [LG화학 디지털아카이브 - 해외사업 히스토리](http://developers.xeogen.com/blythe/lgarchive/overseas.html)
+![이미지](/img/layout.jpg)  
 2. 여백 
     > <a href="https://codepen.io/blythe4/pen/MLjwYw/" target="_blank">CodePen 예제</a>
-    - 여백과 column의 넓이 둘다 유동적으로 화면의 넓이에 따라 변한다.
+    - 여백과 column의 넓이 둘다 가변적으로 화면의 넓이에 따라 변한다.
     - 여백의 넓이는 항상 고정이고, column이 화면의 넓이의 비율에 따라 변한다.
 
 3. 레이아웃 넓이 고정
-    > Break Point에 따라 각각 레이아웃의 넓이가 고정 또는 유동적으로 변경 <a href="https://codepen.io/blythe4/pen/yZGXeo" target="_blank">CodePen 예제</a>
-    1. 유동적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_cv.htm)
-    2. 고정적인 레이아웃 + 유동적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm)  
+    > Break Point에 따라 각각 레이아웃의 넓이가 고정 또는 가변적으로 변경 <a href="https://codepen.io/blythe4/pen/yZGXeo" target="_blank">CodePen 예제</a>
+    1. 가변적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_cv.htm)
+    2. 고정적인 레이아웃 + 가변적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm)  
 
 ## 5. 이미지 요소  
 > 디바이스에따라 화면의 밀도가 2배에서 4배로 점점 증가하고 있다.  
@@ -69,14 +72,15 @@
 
 ### 이미지 표시 방법
 1. 비율 따른 이미지 축소 및 확대 [LG화학 디지털아카이브 - 기네스북](http://developers.xeogen.com/blythe/lgarchive/guinness.html)
-2. 디바이스별로 이미지를 다르게 표현 [LG화학 디지털아카이브 - 생명과학](http://developers.xeogen.com/blythe/lgarchive/bioproduct.html)
+![이미지](/img/image-01-01.jpg)  
+2. 디바이스별로 이미지를 다르게 표현  
+![이미지](/img/responsive-img.png)  
 3. 높이를 고정으로 하고 이미지를 가운데로 정렬 [예제](https://www.w3schools.com/w3css/tryw3css_templates_cafe.htm)
 
 ## 6. 동영상
 > 동영상이 Background에서 자동재생+loop일때 
 1. 화면에 꽉차게 표시  
 : 동영상을 가운데 정렬 [사이트 예제](http://sugentech.com/KOR/)
-2. Break Point에 따라서 비율에 맞춰 표시
 
 ## 7. 폰트  
 1. 모바일 - 시스템 폰트 / 웹 - 웹폰트 사용
@@ -117,12 +121,12 @@
 
 
 ## 8. 표 
-* 모바일 디바이스에서 대응 방법  
-* [모바일에서 리스트 형태로 보기](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)
+> 모바일 디바이스에서 대응 방법  
+* [모바일에서 리스트 형태로 보기1](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)
+* [모바일에서 리스트 형태로 보기2](https://codepen.io/AllThingsSmitty/pen/MyqmdM)
 * [테이블 column Select box로 선택해서 보기](http://gergeo.se/RWD-Table-Patterns/)  
 * 테이블 고정([상단고정](https://codepen.io/blythe4/pen/qgaBVG/), [좌측고정](https://codepen.io/blythe4/pen/OdRJvb/))
 * [모바일에서 슬라이드로 변환](https://medium.com/@andrejsabrickis/responsive-tables-made-simple-4609804ce60b)
-(https://medium.com/@andrejsabrickis/responsive-tables-made-simple-4609804ce60b)
 
 ## 9. 리스트
 * 리스트의 순서 및 정렬
