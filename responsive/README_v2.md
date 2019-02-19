@@ -17,7 +17,7 @@
 3. Web : 1280px
 </pre>
 
-## 2. 시작 기준은 어디부터 ?   
+## 2. 모바일 기준 기획, 디자인   
 1. 모바일 (320px)  
 2. PC (1920px)  
 ** 시안단계에서 웹부터 디자인을 하지만, 실제 프로젝트 진행 시 모바일부터 디자인
@@ -86,21 +86,43 @@
     2. Tablet : 28px
     3. Mobile : 20px
     </pre>
-3. 분기점 기준으로 디바이스 넓이에 따라 비율([vw 단위](https://codepen.io/blythe4/pen/dagVRa))로 사용
+3. 분기점 기준으로 디바이스 넓이에 따라 비율([vw 단위](https://www.w3schools.com/howto/howto_css_responsive_text.asp))로 사용
     <pre>
     1. Web : 32px
     2. Tablet : 28px
     3. Mobile : 5.55vw
     </pre>
+4. 정해진 폰트 크기가 디바이스 넓이에 따라 비율로 확대,축소  
+    [:root를 기준으로 상대단위 적용](https://allthingssmitty.com/2016/12/05/flexible-type-using-root/)
+    ```css
+    :root {
+        font-size: calc(1vw + 1vh + .5vmin);
+    }
+    body {
+       font: 1rem/1.6 sans-serif;
+    }
+
+    p {
+       font-size: 1em;
+    }
+    @media screen and (max-width: 45em) {
+        p {
+            font-size: 1.25em;
+        }
+    }
+    ```
 
 > vw : Viewport Width로 디바이스의 스크린 넓이값을 기준으로 1vw는 viewport 넓이의 1%와 같다.  
-  예) 320px의 넓이일때 1vw는 3.2px이 된다.
+  예) 320px의 넓이일때 1vw는 3.2px이 된다. [예제](https://codepen.io/blythe4/pen/dagVRa)
+
 
 ## 8. 표 
 * 모바일 디바이스에서 대응 방법  
 * [모바일에서 리스트 형태로 보기](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)
 * [테이블 column Select box로 선택해서 보기](http://gergeo.se/RWD-Table-Patterns/)  
 * 테이블 고정([상단고정](https://codepen.io/blythe4/pen/qgaBVG/), [좌측고정](https://codepen.io/blythe4/pen/OdRJvb/))
+* [모바일에서 슬라이드로 변환](https://medium.com/@andrejsabrickis/responsive-tables-made-simple-4609804ce60b)
+(https://medium.com/@andrejsabrickis/responsive-tables-made-simple-4609804ce60b)
 
 ## 9. 리스트
 * 리스트의 순서 및 정렬
@@ -148,6 +170,7 @@
 ## 11. 원페이지 반응형
 * 화면에서 보여지는 내용이 화면보다 많을 경우 내용이 화면에서 다 안보이고 화면 밖으로 넘어가 스크롤이 생기거나 이미지 또는 내용이 겹쳐보이거나 짤려보일 수 있다.(비율에 맞춰 작게 보이거나 여백이 많아져 보일 수도 있다.)
 * 해상도 높이는 사용자마다 브라우저의 환경설정이 다르기 때문에 화면에 넘치거나, 여백이 많이 생길 수 도 있다.
+
 
 ### 해상도
 1. HD : 1280x720  

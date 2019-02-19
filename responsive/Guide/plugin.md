@@ -15,12 +15,27 @@
 [Caniuse - Data URLs](http://caniuse.com/datauri)
 [Data URL를 사용하여 웹 사이트 속도 향상](https://blog.teamtreehouse.com/using-data-uris-speed-website)
 
+```html
+<li title="icon-chat">
+    <div class="icon-box">
+        <div class="icon icon-chat icon-chat-dims">
+            <!-- icon-chat -->
+        </div>
+    </div>
+    <h2>icon-chat</h2>
+</li>
+```
+```css
+.icon-chat,.icon-chat\:regular{background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22300%22%20viewBox%3D%220%20-20%20512%20512%22%3E%3Cpath%20d%3D%22M256%200C120.55%200%200%2092.375%200%20217.988c0%2045.88%2016.29%2089.32%2047.234%20126.29L20.641%20446.96c-3.946%2015.226%2010.523%2028.934%2025.566%2024.023l135.672-44.28c23.969%206.155%2048.871%209.273%2074.121%209.273%20135.535%200%20256-92.465%20256-217.989C512%2091.391%20390.242%200%20256%200zm0%20395.977c-23.703%200-47.02-3.16-69.293-9.387a20.04%2020.04%200%200%200-11.594.246L68.52%20421.629l20.093-77.578a19.997%2019.997%200%200%200-4.66-18.57C55.2%20294.304%2040%20257.132%2040%20217.987c0-98.144%2096.898-177.992%20216-177.992s216%2079.848%20216%20177.992-96.898%20177.989-216%20177.989zm25-177.993c0%2013.809-11.191%2025-25%2025s-25-11.191-25-25c0-13.804%2011.191-25%2025-25s25%2011.196%2025%2025zm100%200c0%2013.809-11.191%2025-25%2025s-25-11.191-25-25c0-13.804%2011.191-25%2025-25s25%2011.196%2025%2025zm-200%200c0%2013.809-11.191%2025-25%2025s-25-11.191-25-25c0-13.804%2011.191-25%2025-25s25%2011.196%2025%2025zm0%200%22%2F%3E%3C%2Fsvg%3E');background-repeat:no-repeat}
+.icon-chat-dims{width:300px;height:300px}
+```
+
 ### [IE 브라우저](https://caniuse.com/#search=data)  
 - IE8 : 최대 URL길이는 32KB, Non-base64-encoded SVG data URIs need to be uriencoded to work in IE and Firefox as according to the specification.    
 - IE9 이상 : 최대 크기 제한은 4GB  
 
 [Github HTML Preview](https://htmlpreview.github.io/)  
-예제) /giude/iconizr/icons/iconizr-svg-data-preview.html
+예제) https://github.com/blythe4/vscode-git/blob/master/responsive/Guide/iconizr/iconizr-preview.html
 
 ![이미지](/img/icon_01.png)  
 
