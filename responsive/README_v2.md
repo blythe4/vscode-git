@@ -18,14 +18,10 @@
 </pre>
 
 ## 2. 모바일 기준 기획, 디자인   
-1. 모바일 (320px)  
-2. PC (1920px)  
-
-** [피드백] Top Area /Contents Area / Footer Area 의 러프한 구성인지 더 자세한 설명 필요.  
 ** 시안단계에서 웹부터 디자인을 하지만, 실제 프로젝트 진행 시 모바일부터 디자인
 
 ## 3. 폴더구조 및 파일명
-> 프로젝트 진행 후 폴더구조 및 파일명 수정에 대한 미연에 방지를 위해 프로젝트 시작 전 기준을 정하고 공동 작업자들과 공유한다. 
+> 프로젝트 시작 전 기준을 정하고 공동 작업자들과 공유한다. 
 1. Break Point를 기준으로 폴더명 생성
     <pre>
     Web
@@ -47,13 +43,12 @@
     </pre>
 
 ## 4. 레이아웃  
-1. 순차적인 순서가 아닌 디바이스(모바일, 테블릿, 웹)에서 각자 다른 위치를 나타낼 때  
-: 각 디바이스별 구조가 달라질때 [LG화학 디지털아카이브 - 해외사업 히스토리](http://developers.xeogen.com/blythe/lgarchive/overseas.html)
+1. 각 디바이스(모바일, 테블릿, 웹)별 구조가 달라질때 [LG화학 디지털아카이브 - 해외사업 히스토리](http://developers.xeogen.com/blythe/lgarchive/overseas.html)
 ![이미지](/img/layout.jpg)  
 2. 여백 
     > <a href="https://codepen.io/blythe4/pen/MLjwYw/" target="_blank">CodePen 예제</a>
-    - 여백과 column의 넓이 둘다 가변적으로 화면의 넓이에 따라 변한다.
-    - 여백의 넓이는 항상 고정이고, column이 화면의 넓이의 비율에 따라 변한다.
+    - 여백과 column의 넓이 둘다 가변적으로 화면 넓이의 비율에 따라 변한다.
+    - 여백의 넓이는 항상 고정이고, column이 화면 넓이의 비율에 따라 변한다.
 
 3. 레이아웃 넓이 고정
     > Break Point에 따라 각각 레이아웃의 넓이가 고정 또는 가변적으로 변경 <a href="https://codepen.io/blythe4/pen/yZGXeo" target="_blank">CodePen 예제</a>
@@ -61,7 +56,7 @@
     2. 고정적인 레이아웃 + 가변적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm)  
 
 ## 5. 이미지 요소  
-> 디바이스에따라 화면의 밀도가 2배에서 4배로 점점 증가하고 있다.  
+> 디바이스에 따라 화면의 밀도가 2배에서 4배로 점점 증가하고 있다.  
 > 사용자가 화면을 봤을때 이미지가 흐려보이거나 깨져 보이지 않으려면 최소 2배 이상의 이미지가 필요하다.  
 
 ### 이미지를 어떻게 사용해야 할까?
@@ -96,7 +91,7 @@
     2. Tablet : 28px
     3. Mobile : 5.55vw
     </pre>
-4. 정해진 폰트 크기가 디바이스 넓이에 따라 비율로 확대,축소  
+4. 정해진 폰트 크기가 디바이스 화면 사이즈에 따라 비율로 확대,축소  
     [:root를 기준으로 상대단위 적용](https://allthingssmitty.com/2016/12/05/flexible-type-using-root/)
     ```css
     :root {
