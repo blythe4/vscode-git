@@ -93,6 +93,13 @@
     </pre>
 4. 정해진 폰트 크기가 디바이스 화면 사이즈에 따라 비율로 확대,축소  
     [:root를 기준으로 상대단위 적용](https://allthingssmitty.com/2016/12/05/flexible-type-using-root/)
+    * 아이폰5 일때 :root의 font-size는 10px이 된다.  
+    <pre>
+    화면 사이즈 : 320 x 568
+    3.2px + 5.68px + 1.6px = 10.48px
+    ( 1vw +  1vh  + .5vmin )
+    </pre>
+    
     ```css
     :root {
         font-size: calc(1vw + 1vh + .5vmin);
