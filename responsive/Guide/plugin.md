@@ -36,8 +36,8 @@
 - IE8 : 최대 URL길이는 32KB
 - IE9 이상 : 최대 크기 제한은 4GB  
 
-[Github HTML Preview](https://htmlpreview.github.io/)  
-예제) https://github.com/blythe4/vscode-git/blob/master/responsive/Guide/iconizr/iconizr-preview.html
+<!-- [Github HTML Preview](https://htmlpreview.github.io/)   -->
+[예제](http://developers.xeogen.com/blythe/responsive/iconizr/iconizr-preview.html)
 
 ![이미지](/img/icon_01.png)  
 
