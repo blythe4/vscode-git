@@ -31,7 +31,7 @@
     - 레이아웃의 흐름이 달라지지 말자. (왼쪽에서 오른쪽으로 → / 위에서 아래로 ↓)  
 ![이미지](/img/layout.jpg)  
 2. 레이아웃 넓이 고정
-    > Break Point에 따라 각각 레이아웃의 넓이가 고정 또는 가변적으로 변경 <a href="https://codepen.io/blythe4/pen/yZGXeo" target="_blank">CodePen 예제</a>
+    > Break Point에 따라 각각 레이아웃의 넓이가 고정 또는 가변적으로 변경
     1. 가변적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_cv.htm)
     2. 고정적인 레이아웃 + 가변적인 레이아웃 [예제](https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm)  
 3. 여백 
@@ -65,7 +65,7 @@
 1. SVG 사용 : 로고, 아이콘
 
 ### 이미지 표시 방법
-1. 비율 따른 이미지 축소 및 확대
+1. 비율 따른 이미지 축소 및 확대  
 ![이미지](/img/image-01-01.jpg)  
 2. 디바이스별로 이미지를 다르게 표현  
 ![이미지](/img/responsive-img.png)  
@@ -95,35 +95,7 @@
     2. Tablet : 28px
     3. Mobile : 5.55vw
     </pre>
-4. 정해진 폰트 크기가 디바이스 화면 사이즈에 따라 비율로 확대,축소  
-    : 제오젠 포트폴리오 제작 시 TEST 후 적용 여부 판단 예정
-    [:root를 기준으로 상대단위 적용](https://allthingssmitty.com/2016/12/05/flexible-type-using-root/)
-    * 아이폰5 일때 :root의 font-size는 10px이 된다.  
-    <pre>
-    화면 사이즈 : 320 x 568
-    3.2px + 5.68px + 1.6px = 10.48px
-    ( 1vw +  1vh  + .5vmin )
-    </pre>
-    
-    ```css
-    :root {
-        font-size: calc(1vw + 1vh + .5vmin);
-    }
-    body {
-       font: 1rem/1.6 sans-serif;
-    }
-
-    p {
-       font-size: 1em;
-    }
-    @media screen and (max-width: 45em) {
-        p {
-            font-size: 1.25em;
-        }
-    }
-    ```
-
-> vw : Viewport Width로 디바이스의 스크린 넓이값을 기준으로 1vw는 viewport 넓이의 1%와 같다.  
+> vw : Viewport Width로 디바이스의 스크린 넓이값을 기준으로 1vw는 viewport 넓이의 1%와 같다. 
   예) 320px의 넓이일때 1vw는 3.2px이 된다. [예제](https://codepen.io/blythe4/pen/dagVRa)
 
 ### 모바일에서 폰트 사이즈가 가변적일 때 생길 수 있는 이슈는?
@@ -195,9 +167,7 @@
     - 폰트 크기(디바이스 넓이에 맞춰 가변적인 사이즈, 고정사이즈) : 확인 필요
     - GNB 메뉴 표시(Hover, Touch에 따라 GNB 표시) : 확인 필요
 
-## 폴더구조 및 파일명
-> 프로젝트 시작 전 기준을 정하고 공동 작업자들과 공유한다.  
-> 하나의 폴더 안에 파일명으로 구분  
+## 폴더구조 및 파일명  
 1. 폴더구조  
     : IA를 따른다.
 <pre>
