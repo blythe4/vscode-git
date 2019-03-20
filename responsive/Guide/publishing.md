@@ -31,8 +31,20 @@
 2. 이미지(비율, 높이고정, 밀도에 따른 배수 이미지)
 3. 폰트 크기(디바이스 넓이에 맞춰 유동적인 사이즈, 고정사이즈)
 4. 레이아웃 고정 넓이(Left menu)
-5. 여백 넓이(고정, 넓이 비율)
-6. column, gutter 넓이(비율, 고정)
+5. column, gutter 넓이(비율, 고정)
+
+## 이미지 파일명
+* @Sufix로 구분한다.(w - PC / t - Tablet / m - Mobile)
+* 만약 동일한 사이즈의 이미지를 사용한다면 디바이스의 넓이가 작은것으로 사용한다.  
+    ex) Web과 Tablet의 사이즈가 같으면 Tablet 이미지 사용
+<pre>
+- img01@w.jpg
+- img01@t.jpg
+- img01@m.jpg
+
+- img02@t.jpg
+- img02@m.jpg
+</pre>
 
 ## media query 사용한 css, 디바이스에 맞는 css
 * 하나의 css로 반응형을 제작
@@ -162,22 +174,8 @@
     </pre>
 
 ## 표 
-* 모바일 디바이스에서 대응 방법  
-* 테이블 고정([상단고정](https://codepen.io/blythe4/pen/qgaBVG/), [좌측고정](https://codepen.io/blythe4/pen/OdRJvb/))
-* [모바일에서 리스트 형태로 보기](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)  
+* [모바일에서 리스트 형태로 보기1](https://www.jqueryscript.net/demo/Small-Responsive-Table-Plugin-with-jQuery-CSS3-Stacked-Rows/)
+* [모바일에서 리스트 형태로 보기2](https://codepen.io/AllThingsSmitty/pen/MyqmdM)
 * [테이블 column Select box로 선택해서 보기](http://gergeo.se/RWD-Table-Patterns/)  
-    <pre>
-    - 스크롤
-    - column이나 row를 기준으로 테이블 새로 만들기
-    - 테이블이 아닌 리스트 형태의 디자인
-    </pre>
-    1. [Scroll - Table]  
-    ![이미지](/img/table-scroll.png)  
-    2-1. [Web - Table]  
-    ![이미지](/img/table-web.png)  
-    2-2. [Mobile - Table]  
-    ![이미지](/img/table-mobile.png)  
-    3-1. [Web - Table]  
-    ![이미지](/img/table-list-web.png)  
-    3-2. [Mobile - Table]  
-    ![이미지](/img/table-list-mobile.png)  
+* 테이블 고정([상단고정](https://codepen.io/blythe4/pen/qgaBVG/), [좌측고정](https://codepen.io/blythe4/pen/OdRJvb/))
+* [모바일에서 슬라이드로 변환](https://medium.com/@andrejsabrickis/responsive-tables-made-simple-4609804ce60b)
